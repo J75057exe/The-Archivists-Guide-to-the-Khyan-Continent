@@ -4,8 +4,8 @@
 		<name>The Archivist's Guide to the Khyan Continent</name>
 		<description>Content from 'The Archivist's Guide to the Khyan Continent'.</description>
 		<author url="http://dnd.wizards.com">Oroka_</author>
-		<update version="0.0.0">
-			<file name="Archivists-Guide.index" url="" />
+		<update version="0.0.1">
+			<file name="Archivists-Guide.index" url="https://github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Archivists-Guide.index" />
 		</update>
 	</info>
 	<files>
