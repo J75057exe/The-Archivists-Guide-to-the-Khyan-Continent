@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	<files>
-		<file name="sources.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Sources.xml" />
+		<file name="Sources.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Sources.xml" />
 		<file name="Race-Cruor.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Races/Race-Cruor.xml" />
 	</files>
 </index>
