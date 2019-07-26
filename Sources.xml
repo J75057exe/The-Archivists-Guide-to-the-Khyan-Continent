@@ -12,9 +12,9 @@
 		<setters>
 			<set name="abbreviation">TAG</set>
 			<set name="url">https://sites.google.com/view/thearchivistsguide/home</set>
-			<set name="author" abbreviation="OROKA" url="https://sites.google.com/view/thearchivistsguide/home">Wizards of the Coast</set>
+			<set name="author" abbreviation="OROKA" url="https://sites.google.com/view/thearchivistsguide/home">Oroka_</set>
 			<set name="official">false</set>
-			<set name="core">false</set>
+			<set name="third-party">true</set>
 			<set name="release">20190727</set>
 		</setters>
 	</element>
