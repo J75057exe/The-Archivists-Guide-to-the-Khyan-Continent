@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.1">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/sources.xml" />
+		</update>
+	</info>
+	<element name="The Archivist's Guide to the Khyan Continent" type="Source" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_SOURCE_ARCHIVISTS_GUIDE">
+		<description>
+			<![CDATA[<p><strong>A new set of lore and content from The Archivist's Guide to the Khyan Continent.</strong></p><p>From Vampires to Oozes, to wizards to witches, this is all you need to build a character in the world of Khy.</p><p>Dungeons &amp; Dragons immerses you in a world of adventure, and this allows you to immerse yourself into the realm of Khy, learn about its deities, its culture, and the warring factions that both divide and bond the continent.</p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">TAG</set>
+			<set name="url">https://sites.google.com/view/thearchivistsguide/home</set>
+			<set name="author" abbreviation="OROKA" url="https://sites.google.com/view/thearchivistsguide/home">Wizards of the Coast</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20190727</set>
+		</setters>
+	</element>
