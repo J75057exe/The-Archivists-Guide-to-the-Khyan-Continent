@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name>Oblex</name>
+        <description>The Oblex race from The Archivist's Guide to the Khyan Continent.</description>
+        <author url="https://sites.google.com/view/thearchivistsguide/home">Oroka_</author>
+        <update version="0.0.1">
+            <file name="Race-Oblex.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Races/Race-Oblex.xml" />
+        </update>
+    </info>
     <element name="Oblex" type="Race" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_RACE_OBLEX">
         <description>
             <p class="flavor">Oblex are creatures created by mindflayers that feed upon memories. (This is an adaptation of a hombrew on DnDBeyond made by Jester_BE with tweaks made by Oroka_).</p>
