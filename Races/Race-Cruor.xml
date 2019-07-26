@@ -5,7 +5,7 @@
         <description>The Cruor race from The Archivist's Guide to the Khyan Continent.</description>
         <author url="https://sites.google.com/view/thearchivistsguide/home">Oroka_</author>
         <update version="0.0.1">
-            <file name="Race-Cruor.xml" url="" />
+            <file name="Race-Cruor.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Races/Race-Cruor.xml" />
         </update>
     </info>
     <element name="Cruor" type="Race" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_RACE_CRUOR">
