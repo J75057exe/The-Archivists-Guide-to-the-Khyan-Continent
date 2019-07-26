@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <element name="Oblex" type="Race" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_RACE_OBLEX">
+        <description>
+            <p class="flavor">Oblex are creatures created by mindflayers that feed upon memories. (This is an adaptation of a hombrew on DnDBeyond made by Jester_BE with tweaks made by Oroka_).</p>
+            <h4>ARTIFICIAL HORRORS</h4>
+            <p>The first oblexes were created by the Illithid, otherwise known as the Mindflayers long ago. Horrid experiments which manifested from slimes that existed in the Underdark, these creatures harbour a constant need for absorbing the memories of other intelligent creatures. This need makes their kind hated among the denizens of the Underdark, and if any upon the surface know of them, they likely despise them as well.</p>
+            <h4>UNWANTED MUTANTS</h4>
+            <p>The mutated spawn of an oblex is unwanted, and usually killed when an adult or elder oblex learns of what their spawn may be. They view these creatures as lesser, undeserving of life, something that should not be while all the while unaware the creature itself is the same. Oblexes who do survive tend to isolate themselves and mimic the form of their most dominant memory, or hide amongst the populace of the Underdark.</p>
+            <h4>HANGING ON A CLIFF FOR SURVIVAL</h4>
+            <p>The Oblexes that do survive in a settlement or make their way to the surface must create a careful balance between their needs and the of risk being discovered. Oblexes do not feed as other races do. Instead, they survive on thoughts to maintain their form and intelligence. They can eat and consume food and liquids, but they don’t have a need for it as the memories they absorb are their true form of sustenance. Their dominant personality is constantly warring with itself, either with other minds that slipped into its form or the constant rambling from the different thoughts. </p>
+            <h4>OBLEX SOCIETY AND BIOLOGY</h4>
+            <p>What little society exists of Oblexes is limited in its capabilities, as the constant need for new memories to survive and to remain hidden outweighs conversing with others of its kind. However, Oblexes do have a better chance of detecting others of their kind, but they rarely converse . Surprisingly enough, Oblexes are capable of reproducing by combining loose memories they’ve gathered with the loose memories of another Oblex.</p>
+            <h4>OBLEX TRAITS</h4>
+            <p>Your Oblex character has the following traits.</p>
+            <p class="indent"><b><i>Ability Score Increase</i></b> You get a +2 to your intelligence score and can have a +1 bonus to either wisdom or constitution.</p>
+            <p class="indent"><b><i>Age. </i></b>Oblex age differently from most species. Most succumb to the madness of the many minds they host before even achieving a glimpse at old age. Most oblex can last a couple of centuries before being eveloped by insanity. From being a spawn, oblex mature quickly into adulthood, dependent upon the availability of food.</p>
+            <p class="indent"><b><i>Alignment. </i></b>Oblexes are typically inclined towards an evil alignment but truly lean more neutral.</p>
+            <p class="indent"><b><i>Size. </i></b>An Oblex's size is ever changing and can be either small or medium but cannot exceed medium for extended periods of time.</p>
+            <p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet.</p>
+            <p class="indent"><b><i>Sulfurous Impersonation. </i></b>As an action, you can transform your appearance or revert to your natural form. You can’t duplicate the appearance of a creature you’ve never seen, and you revert to your natural form if you die. You decide what you look like, including your height, weight, facial features, the sound of your voice, coloration, hair length, sex, and any other distinguishing characteristics. You can make yourself appear as a member of another race, though none of your game statistics change. You also can’t appear as a creature of a larger size than you. Your clothing and other equipment don’t change in appearance, size, or shape to match your new form, requiring you to keep a few extra outfits on hand to make the most compelling disguise possible. Even to the most astute observers, your ruse is usually indiscernible. If you rouse suspicion, or if a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) check you make to avoid detection. While using this ability, you smell faintly of sulfur.</p>
+            <p class="indent"><b><i>Innate Psionic Abilities. </i></b>Like all Oblex, you have innate psionic abilities. You can read the surface thoughts, similar to the detect thoughts spell, when interacting with another creature for longer than one minute. At level 3, you can cast detect thoughts spell once per short or long rest. At level 8, you can feed using your detect thoughts, but this only works when the target is within 30 ft. Additionally at level 8, you can cast hold person once per long rest.</p>
+            <p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and Deep Speech, as well as the native language of the race you are currently impersonating.</p>
+            <p class="indent"><b><i>Need to Feed. </i></b>An Oblex craves information; they need it to survive. This can take many forms, be it a novel, encyclopedia, or someone's memories. Memories will sustain an oblex most efficiently, however, an oblex can obtain a days worth of food from about an hours worth of reading. Memories will sustain an oblex for 5 days an allow it to grow, whilst book knowledge will only sustain it. To feed on memories the oblex places a part of their form on another creature and over the course of 1d4 x the creature's Intelligence modifier minutes you siphon out informations. You gain their form an whilst in that form you can speak any languages they speak. </p>
+            <p class="indent"><b><i>Creature of the Deep. </i></b>Due to your fragmented mind, you are vulnerable to psychic damage. Furthermore, if you take fire damage, you have disadvantage on attack rolls and ability checks until the end of your next turn. </p>
+        </description>
+        <sheet>
+            <description>A memory consuming ooze created by mindflayers.</description>
+        </sheet>
+        <rules>
+            <stat name='intelligence' value="2" />
+            <select type="Racial Trait" name="Oblex Ability Score Increase" supports="Oblex ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Racial Trait" id="ID_OROKA_KHY_RACIAL_TRAIT_OBLEX_SULFUROUS_IMPERSONATION" />
+            <grant type="Racial Trait" id="ID_OROKA_KHY_RACIAL_TRAIT_OBLEX_NEED_TO_FEED" />
+            <grant type="Racial Trait" id="ID_OROKA_KHY_RACIAL_TRAIT_OBLEX_INNATE_PSIONICS" />
+            <grant type="Racial Trait" id="ID_OROKA_KHY_RACIAL_TRAIT_OBLEX_CREATURE_OF_THE_DEEP" />
+        </rules>
+    </element>
+    <element name="Wisdom Score Increase by 1" type="Racial Trait" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_TRAIT_OBLEX_WISDOM">
+        <supports>Oblex ASI</supports>
+        <description>Increases your character's wisdom score by 1.</description>
+        <sheet display="False"></sheet>
+        <rules>
+            <stat name='wisdom' value="1" />
+        </rules>
+    </element>
+    <element name="Constitution Score Increase by 1" type="Racial Trait" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_TRAIT_OBLEX_CONSTITUTION">
+        <supports>Oblex ASI</supports>
+        <description>Increases your character's constitution score by 1.</description>
+        <sheet display="False"></sheet>
+        <rules>
+            <stat name='constitution' value="1" />
+        </rules>
+    </element>
+    <element name="Sulfurous Impersonation" type="Racial Trait" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_RACIAL_TRAIT_OBLEX_SULFUROUS_IMPERSONATION">
+        <description>As an action, you can transform your appearance or revert to your natural form. You can’t duplicate the appearance of a creature you’ve never seen, and you revert to your natural form if you die. You decide what you look like, including your height, weight, facial features, the sound of your voice, coloration, hair length, sex, and any other distinguishing characteristics. You can make yourself appear as a member of another race, though none of your game statistics change. You also can’t appear as a creature of a larger size than you. Your clothing and other equipment don’t change in appearance, size, or shape to match your new form, requiring you to keep a few extra outfits on hand to make the most compelling disguise possible. Even to the most astute observers, your ruse is usually indiscernible. If you rouse suspicion, or if a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) check you make to avoid detection. While using this ability, you smell faintly of sulfur.</description>
+        <sheet>
+            <description>as an action you can change your appearance or assume your natural form. You can only duplicate the form of a creature you've seen. If you die you revert to your natural form. You can change your height, weight, facial features, voice, colouration, hair length, sex, and any other physical characteristics. When assuming the appearance of another race you learn the associated language. You cant appear as a creature larger than medium. Your clothing does not change size.</description>
+        </sheet>
+    </element>
+    <element name="Need to Feed" type="Racial Trait" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_RACIAL_TRAIT_OBLEX_NEED_TO_FEED">
+        <description>An Oblex craves information; they need it to survive. This can take many forms, be it a novel, encyclopedia, or someone's memories. Memories will sustain an oblex most efficiently, however, an oblex can obtain a days worth of food from about an hours worth of reading. Memories will sustain an oblex for 5 days an allow it to grow, whilst book knowledge will only sustain it. To feed on memories the oblex places a part of their form on another creature and over the course of 1d4 x the creature's Intelligence modifier minutes you siphon out informations. You gain their form an whilst in that form you can speak any languages they speak.</description>
+        <sheet>
+            <description>As an oblex you need information and knowledge. To sustain yourself, books and other such sources are sufficient, however, you will need to read/other for at least an hour everyday. In order to grow you will need to feed on memories. Memories will sustain you for 5 days. To feed on memories the oblex places a part of their form on another creature and over the course of 1d4 x the creature's Intelligence modifier minutes you siphon out informations. You gain their form an whilst in that form you can speak any languages they speak.</description>
+        </sheet>
+    </element>
+    <element name="Innate Psionic Abilities" type="Racial Trait" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_RACIAL_TRAIT_OBLEX_INNATE_PSIONICS">
+        <description>Like all Oblex, you have innate psionic abilities. You can read the surface thoughts, similar to the detect thoughts spell, when interacting with another creature for longer than one minute. At level 3, you can cast detect thoughts spell once per short or long rest. At level 8, you can feed using your detect thoughts, but this only works when the target is within 30 ft. Additionally at level 8, you can cast hold person once per long rest.</description>
+        <sheet>
+            <description>You can read the surface thoughts, similar to the detect thoughts spell, when interacting with another creature for longer than one minute. At level 3, you can cast detect thoughts spell once per short or long rest. At level 8, you can feed using your detect thoughts, but this only works when the target is within 30 ft. Additionally at level 8, you can cast hold person once per long rest.</description>
+        </sheet>
+    </element>
+    <element name="Creature of the Deep" type="Racial Trait" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_RACIAL_TRAIT_OBLEX_CREATURE_OF_THE_DEEP ">
+        <description>Due to your fragmented mind, you are vulnerable to psychic damage. Furthermore, if you take fire damage, you have disadvantage on attack rolls and ability checks until the end of your next turn.</description>
+        <sheet>
+            <description>You're vulnerable to psychic damage. Furthermore, if you take fire damage you have disadvantage on attack rolls and ability checks until the end of your next turn.</description>
+        </sheet>
+    </element>
+</elements>
