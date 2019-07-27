@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <element name="Order of the Focused Blade" type="Archetype" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FOCUSEDBLADE">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p class="flavor">Mages that combine magic with physical prowess. These wizards often use their intellect to give themselves an advantage on the battlefield.</p>
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_COMBAT_ADEPT" />
+			<div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_FOCUS" />
+			<div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_EXTRA_ATTACK" />
+			<div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_ARCANE_AEGIS" />
+			<div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_PRECISION_STRIKE" />
+        </description>
+        <sheet>
+            <description>Mages that specialise in the mystic arts</description>
+        </sheet>
+        <rules>
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_COMBAT_ADEPT" level="2" />
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_FOCUS" level="2" />
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_EXTRA_ATTACK" level="6" />
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_ARCANE_AEGIS" level="10" />
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_PRECISION_STRIKE" level="14" />
+		</rules>
+    </element>
+    <element name="Combat Adept" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_COMBAT_ADEPT">
+        <description>
+            <p>Starting from level 2 when you select this archetype you have trained sufficiently to have gained proficiency with monk weapons and gain the martial arts feature. Whilst unhindered by physical armour, this means that:</p>
+            <ul>
+                <li>You can use your dexterity modifier when determining attack and damage rolls with monk weapons</li>
+                <li>You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes to a d6 at level 6, a d8 at level 12, and a d10 at level 18</li>
+                <li>When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your attacks with your unarmed strike or a monk weapon can deal 1d{{martial arts:dice}} damage instead of the original damage dice. You can use Strength or Dexterity for these attacks. If you attack with a monk weapon as your action you can make an unarmed strike as a bonus action.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+     	 	<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+      		<stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
+      		<stat name="martial arts:attack" value="dexterity:modifier" bonus="martial arts" />
+			<stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
+      		<stat name="martial arts:damage" value="dexterity:modifier" bonus="martial arts" />
+			<stat name="martial arts:dice" value="4" bonus="martial arts" />
+      		<stat name="martial arts:dice" value="6" bonus="martial arts" level="6" />
+      		<stat name="martial arts:dice" value="8" bonus="martial arts" level="12" />
+      		<stat name="martial arts:dice" value="10" bonus="martial arts" level="18" />
+        </rules>
+    </element>
+    <element name="Focus" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_FOCUS">
+        <description>
+            <p>Starting from level 2 when you select this archetype you gain the ability to enter a state of enhanced focus. You can only use your focus as long as you are unarmoured. It ends early if you don armour or make an attack using anything other than a monk weapon or an unarmed strike. You activate your focus using your bonus action, and it lasts for 1 minute. It can be activated twice per short or long rest.</p>
+            <p class="indent"> While active you gain the following benefits:</p>
+            <ul>
+                <li>You can add your intelligence modifier (minimum of +1) to your AC</li>
+                <li>Your walking speed increases by 10ft</li>
+                <li>You have advantage on Dexterity (Acrobatics) checks</li>
+                <li>You gain a bonus to any constitution saving throw that you make in order to maintain concentration on a spell. The bonus equals your intelligence modifier (minimum of +1)</li>
+            </ul>
+        </description>
+        <sheet usage="2/Short Rest">
+            <description>You can use a bonus action to activate your focus, which lasts for one minute. +{{focus:intelligence}} AC, +10 speed, advantage on Acrobatics checks, +{{focus:intelligence}} to concentration checks.</description>
+        </sheet>
+        <rules>
+            <stat name="focus:intelligence" value="1" bonus="focus" />
+            <stat name="focus:intelligence" value="intelligence:modifier" bonus="focus" />
+        </rules>
+    </element>
+    <element name="Extra Attack" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_EXTRA_ATTACK">
+        <description>
+            <p>Starting at 6th level you can attack twice instead of once whenever you take the attack action on your turn.</p>
+        </description>
+        <sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="6" bonus="extra attack" />
+		</rules>
+    </element>
+    <element name="Arcane Aegis" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_ARCANE_AEGIS">
+        <description>
+            <p>Starting from 10th level you can use your magic to protect you and your allies from harm. As a reaction when either an enemy attacks or an ally is attacked within 60ft you can expend a spell slot to create an arcane barrier to protect them. The shield has a number of hit points equal to 10x the spell slot level. You can create a number of shields equal to your level divided by 5. One shield is 10ft in radius. You can expend two shields to create a single shield 20ft in radius. If the shield is destroyed by damage then any left over damage is dealt as if the spell had succeeded initially. The shield remains in place until destroyed. Moving through the shield costs an extra 5ft of movement. When someone moves through the shield, as a reaction you can cause it to deal force damage. For every point of damage you deal, it takes away one hit point from the shield. You can move the shield as a bonus action on your turn. You can dismiss the shield at any time on your turn, requiring no action.</p>
+        </description>
+        <sheet>
+            <description>When an enemy attacks or an ally is attacked within 60ft you can spend a spell slot to create a shield with 10 times as much health as the slot expended. It can be moved using a bonus action. It costs an extra 5ft of movement to move through. Using your reaction you can spend the shields hit points to damage anyone moving through it.</description>
+        </sheet>
+        <rules />
+    </element>
+    <element name="Precision Strike" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_FOCUSEDBLADE_PRECISION_STRIKE">
+        <description>
+            <p>Starting at 14th level, you add your Intelligence modifier (minimum of +1) to the damage of your melee weapon attacks while your Focus is active.</p>
+        </description>
+        <sheet>
+            <description>You add +{{focus:intelligence}} to the damage of your melee weapon attacks while your Focus is active.</description>
+        </sheet>
+        <rules>
+            <!-- +focusintelligence on melee damage, condition focus active-->
+        </rules>
+    </element>
+</elements>
