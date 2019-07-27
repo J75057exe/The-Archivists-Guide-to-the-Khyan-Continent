@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
+    <info>
+        <name>Order of the Focused Blade</name>
+        <description>The Order of the Focused Blade wizard subclass from The Archivist's Guide to the Khyan Continent.</description>
+        <author url="https://sites.google.com/view/thearchivistsguide/home">Oroka_</author>
+        <update version="0.0.1">
+            <file name="Class-Focused-Blade.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Classes/Class-Focused-Blade.xml" />
+        </update>
+    </info>
     <element name="Order of the Focused Blade" type="Archetype" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FOCUSEDBLADE">
         <supports>Arcane Tradition</supports>
         <description>
