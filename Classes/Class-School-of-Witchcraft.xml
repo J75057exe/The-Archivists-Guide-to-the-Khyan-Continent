@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>School of Witchcraft</name>
+        <description>The School of Witchcraft wizard subclass from The Archivist's Guide to the Khyan Continent.</description>
+        <author url="https://sites.google.com/view/thearchivistsguide/home">Oroka_</author>
+        <update version="0.0.1">
+            <file name="Class-School-of-Witchcraft.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Classes/Class-School-of-Witchcraft.xml" />
+        </update>
+    </info>
+    <element name="School of Witchcraft" type="Archetype" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_WITCHCRAFT">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p class="flavor">Beings of legend, witches command fear with the general public.</p>
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_BREWING_SAVANT" />
+			<div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_DARK_COVEN" />
+			<div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_WITCHS_FAMILIAR" />
+			<div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_CRIPPLING_HEX" />
+			<div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_OF_THE_COVEN" />
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_UNHOLY_PROTECTOR" />
+        </description>
+        <sheet>
+            <description>Wizards that practice an oft unholy form of magic.</description>
+        </sheet>
+        <rules>
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_BREWING_SAVANT" level="2" />
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_DARK_COVEN" level="2" />
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_WITCHS_FAMILIAR" level="2" />         
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_CRIPPLING_HEX" level="6" />
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_OF_THE_COVEN" level="10" />
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_UNHOLY_PROTECTOR" level="14" />
+		</rules>
+    </element>
+    <!-- Archetype Features -->
+    <element name="Brewing Savant" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_BREWING_SAVANT">
+        <description>
+            <p>Starting from level 2 when you select this arcane tradition, the time and money required to brew/craft potions are halved. You also gain proficiency with the Herbalism Kit and Alchemist’s Supplies.</p>
+        </description>
+        <sheet>
+            <description>When brewing potions, the time and money required is halved.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+     	 	<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+        </rules>
+    </element>
+    <element name="Dark Coven" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_DARK_COVEN">
+        <description>
+            <p>At second level you choose what particular branch of witchcraft you follow. This is determined by your coven. There are three standard covens.</p>
+            <ul>
+                <li><i><b>Coven of the Oracle</b></i> The Oracle sees all, yet is seen by none.</li>
+                <li><i><b>Coven of the Cadaver</b></i> The Cadaver died many a year ago, but the final breath is yet to leave her lungs.</li>
+                <li><i><b>Coven of the Lunatic</b></i> As mad as one can be, yet saner than most; the lunatic finds solace in the insanity.</li>
+            </ul>
+        </description>
+        <sheet display="False">
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Dark Coven" supports="Dark Coven"/>
+        </rules>
+    </element>
+    <element name="Witch's Familiar" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_WITCHS_FAMILIAR">
+        <description>
+            <p>A witch's familiar is no ordinary pet. Some say that a witch's familiar holds the soul of an undead, making them smarter than average familiars and often give them some semblance of autonomy and personality. Whilst remaining completely and unerringly loyal, in certain moments the familiar can exhibit conscientiousness. Witches make an eternal bond with their familiar, forming a pact. As a player it is up to you to decide the personality of your familiar as you are the one who made a pact with the spirit. Often a witch's familiar has few qualms with being a familiar and submits to being a servant. Because your familiar has a soul and will, it can act independently of you while you're incapacitated but only performing something it truly believes to be in your best wishes, as are the terms of the pact, no exceptions, or else the soul shall be eternally damned to the deepest layers of the nine hells.</p>
+            <p class="indent">Starting from level 2 you gain a magical familiar. You learn the spell Find Familiar, however, it’s intelligence score (if not higher) is 11. The familiar can communicate its thoughts to you via your telepathic link, and while your familiar is in a form with an associated language, you learn that language. Your coven allows an alternate form for your familiar:</p>
+            <ul>
+                <li><i><b>Coven of the Oracle</b></i> Gazer</li>
+                <li><i><b>Coven of the Cadaver</b></i> Shadow</li>
+                <li><i><b>Coven of the Lunatic</b></i> Faerie Dragon</li>
+            </ul>
+        </description>
+        <sheet display="False">
+        </sheet>
+        <rules/>
+    </element>
+    <element name="Crippling Hex" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_CRIPPLING_HEX">
+        <description>
+            <p>As a witch, you learn hexes and curses that you can subject others to. At level 6 you learn two from the standard list. Hexes can be used once per long rest and only have verbal components and a range of 90ft. Hexes can be ended prematurely through use of a greater restoration spell, remove curse spell, or other similar magic. They force the target to make a wisdom saving throw against your spell save DC. You learn another hex at levels 14, and 18.</p>
+        </description>
+        <sheet display="False">
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Standard Hexes" supports="Hex" level="6" />
+            <select type="Archetype Feature" name="Standard Hexes" supports="Hex" level="6" />
+            <select type="Archetype Feature" name="Standard Hexes (Lv. 14)" supports="Hex" level="14" />
+            <select type="Archetype Feature" name="Standard Hexes (Lv. 18)" supports="Hex" level="18" />
+        </rules>
+    </element>
+    <element name="Gifts of the coven" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_OF_THE_COVEN">
+        <description>
+            <p>At level 10 you gain an ability according to your chosen coven, you learn a spell, and you learn a Blasphemous Hex</p>
+            <ul>
+                <li><b>Foresight</b><i> - Coven of the Oracle</i>  At the end of a long rest select one ability stat or one damage type. You have resistance to that damage type or advantage with that ability stat until the end of your next long rest. Additionally, the spell Augury is added to your spellbook and is always prepared. Moreover, you learn the hex <i>Prophet's Mark</i>.</li>
+                <li><b>Mediumship</b><i> - Coven of the Cadaver</i> You gain the ability to perceive the ethereal plane within 60ft. Additionally, the spell Speak With Dead is added to your spellbook, is always prepared, and can be cast as a ritual. Moreover, you learn the hex <i>Calling of the Grave</i>.</li>
+                <li><b>Tethered</b><i> - Coven of the Lunatic</i> You have advantage on saves to resist being charmed or frightened. You can use your reaction to give yourself advantage on a concentration check; this ability can be used a number of times equal to your intelligence modifier, per long rest. Additionally, the spell Calm Emotions is added to your spellbook, is always prepared, and can be cast as a ritual. Moreover, you learn the hex <i>Lunar Fixation</i>.</li>
+            </ul>
+        </description>
+        <sheet display="False">
+        </sheet>
+        <rules/>
+    </element>
+    <element name="Unholy Protector" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_UNHOLY_PROTECTOR">
+        <description>
+            <p>At level 14, your familiar gains the ability to assume a more powerful form to serve as your protector. This form is not added to the list of available familiar forms. It remains under your control and all the rules for a familiar apply however it can now attack in this form, including using its different types of ray if a Spectator. Transforming into its alternate form uses the familiar's action and it can remain in this form for up to 10 minutes, after which you must finish a long rest before being able to be used again, or perform the ritual for Find Familiar again.</p>            
+        </description>
+        <sheet display="False">
+        </sheet>
+        <rules/>
+    </element>
+    <!-- Covens -->
+    <element type="Archetype Feature" name="Coven of the Oracle" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_ORACLE">
+        <supports>Dark Coven</supports>
+        <description>
+            <p>The coven of the Oracle follows the teachings of the Oracle, who traded her physical form in return for her immortal soul and all seeing form.</p>
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_FAMILIAR_GAZER" />
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_FORESIGHT" />
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_PROTECTOR_SPECTATOR" />
+        </description>
+        <sheet>
+            <description>Followers of the Oracle</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_FAMILIAR_GAZER" level="2" />
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_FORESIGHT" level="10" />
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_PROTECTOR_SPECTATOR" level="14" />
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Coven of the Cadaver" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_CADAVER">
+        <supports>Dark Coven</supports>
+        <description>
+            <p>The Cadaver traded her life in return for ultimate control over the undead, at the cost of becoming one herself.</p>
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_FAMILIAR_SHADOW" />
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_MEDIUMSHIP" />
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_PROTECTOR_WIGHT" />
+        </description>
+        <sheet>
+            <description>Followers of the Cadaver</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_FAMILIAR_SHADOW" level="2" />
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_MEDIUMSHIP" level="10" />
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_PROTECTOR_WIGHT" level="14" />
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Coven of the Lunatic" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_LUNATIC">
+        <supports>Dark Coven</supports>
+        <description>
+            <p>The Lunatic traded her mind in return for control over other's.</p>
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_FAMILIAR_FAERIE_DRAGON" />
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_TETHERED" />
+            <div element="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_PROTECTOR_DRACONIC" />
+            </description>
+        <sheet>
+            <description>Followers of the Lunatic</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_FAMILIAR_FAERIE_DRAGON" level="2" />
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_TETHERED" level="10" />
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_PROTECTOR_DRACONIC" level="14" />
+        </rules>
+    </element>
+    <!-- Coven Features -->
+    <!-- Familiars -->
+    <element type="Archetype Feature" name="Witch's Famililar - Coven of the Oracle" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_FAMILIAR_GAZER">
+        <description>At 2nd level you enlist the service of a familiar. Being a member of the coven of the Oracle you gain the option of having a Gazer as your familiar.</description>
+        <sheet>
+            <description>Your familiar has an intelligence of 11 or higher. You gain the ability to turn your familiar into a Gazer</description>
+        </sheet>
+        <rules/>
+    </element>
+    <element type="Archetype Feature" name="Witch's Famililar - Coven of the Cadaver" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_FAMILIAR_CRAWLING_CLAW">
+        <description>At 2nd level you enlist the service of a familiar. Being a member of the coven of the Cadaver you gain the option of having a Shadow as your familiar.</description>
+        <sheet>
+            <description>Your familiar has an intelligence of 11 or higher. You gain the ability to turn your familiar into a Shadow</description>
+        </sheet>
+        <rules/>
+    </element>
+    <element type="Archetype Feature" name="Witch's Famililar - Coven of the Lunatic" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_FAMILIAR_FAERIE_DRAGON">
+        <description>At 2nd level you enlist the service of a familiar. Being a member of the coven of the Lunatic you gain the option of having a Faeire Dragon as your familiar.</description>
+        <sheet>
+            <description>Your familiar has an intelligence of 11 or higher. You gain the ability to turn your familiar into a Faerie Dragon</description>
+        </sheet>
+        <rules/>
+    </element>
+    <!-- Gifts of the Coven -->
+    <element type="Archetype Feature" name="Gifts of the Coven - Foresight" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_FORESIGHT">
+        <description>At 10th level your coven grants you special abilities. At the end of a long rest select one ability stat or one damage type. You have resistance to that damage type or advantage with that ability stat until the end of your next long rest. Additionally, the spell Augury is added to your spellbook and is always prepared. Moreover, you learn the hex <i>Prophet's Mark</i>.</description>
+        <sheet>
+            <description>At the end of a long rest you can choose either one ability stat or one damage type. You have resistance to that damage type or advantage with that ability stat until the end of your next long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_PROPHETS_MARK" />
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" spellcasting="Wizard" prepared="true" />
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Gifts of the Coven - Mediumship" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_MEDIUMSHIP">
+        <description>At 10th level your coven grants you special abilities. You gain the ability to perceive the ethereal plane within 60ft. Additionally, the spell Speak With Dead is added to your spellbook, is always prepared, and can be cast as a ritual. Moreover, you learn the hex <i>Calling of the Grave</i>.</description>
+        <sheet>
+            <description>You can perceive the the ethereal plane within 60ft. You can cast the spell <i>Speak with Dead</i> as a ritual.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_CALLING_OF_THE_GRAVE" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" spellcasting="Wizard" prepared="true" />
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Gifts of the Coven - Tethered" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_GIFTS_TETHERED">
+        <description>At 10th level your coven grants you special abilities. You have advantage on saves to resist being charmed or frightened. You can use your reaction to give yourself advantage on a concentration check; this ability can be used a number of times equal to your intelligence modifier, per long rest. Additionally, the spell Calm Emotions is added to your spellbook, is always prepared, and can be cast as a ritual. Moreover, you learn the hex <i>Lunar Fixation</i>.</description>
+        <sheet>
+            <description>You have advantage on saves to resist being charmed or frightened. You can use your reaction to give yourself advantage on a concentration check; this ability can be used +{{intelligence:modifier}} times. You can cast Calm Emotions as a ritual.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_LUNAR_FIXATION" />
+            <grant type="Spell" id="ID_PHB_SPELL_CALM_EMOTIONS" spellcasting="Wizard" prepared="true" />
+        </rules>
+    </element>
+    <!-- Unholy Protector (Needs Finishing!) -->
+    <element type="Archetype Feature" name="Unholy Protector - Spectator" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_PROTECTOR_SPECTATOR">
+        <description>At 14th level your familiar evolved to protect you when the need is great. </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Unholy Protector - Wight" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_PROTECTOR_WIGHT">
+        <description>At 14th level your familiar evolved to protect you when the need is great.</description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Unholy Protector - Basilisk/Wyrmling" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_PROTECTOR_DRACONIC">
+        <description>At 14th level your familiar evolved to protect you when the need is great. Your familiars new form can be either a basilisk or a wyrmling. You must select it when you gain this feature. If you choose a wyrmling you must choose its colour at the same time.</description>
+        <sheet display="False">
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Unholy Protector" supports="Unholy Protector">
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Basilisk" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_BASILISK">
+        <supports>Unholy Protector</supports>
+        <description>Your familiar can become a basilisk</description>
+        <sheet>
+        </sheet>
+        <rules/>
+    </element>
+    <!-- Hexes -->
+    <element type="Archetype Feature" name="Jinx" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_JINX">
+        <supports>Hex</supports>
+        <description>
+            <p>For the next 24 hours, whenever the target speaks they suffer 2d4 psychic damage.</p>
+        </description>
+        <sheet>
+            <description>For the next 24 hours, whenever the target speaks they suffer 2d4 psychic damage.</description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Tainted Love" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_TAINTED_LOVE">
+        <supports>Hex</supports>
+        <description>
+            <p>For the next 24 hours, whilst within 30ft of the target’s preferred gender, everything is counted as difficult terrain. Moreover, they cannot attack anyone of their preferred gender and are unable to speak anything that would be audible to any one of the aforementioned preferred gender.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Accursed Visage" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_ACCURSED_VISAGE">
+        <supports>Hex</supports>
+        <description>
+            <p>For the next 48 hours, the target gains some sort of visual alteration, such as a wart, a slightly longer nose, a large scar, or other similar - and otherwise harmless - effects.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Absent-Minded" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_ABSENT_MINDED">
+        <supports>Hex</supports>
+        <description>
+            <p>For the next 24 hours, the target finds it difficult to focus on one subject for an extended period of time. Every turn whilst maintaining concentration on a spell the target must make an intelligence saving throw against your spell save DC.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Object Impermanence" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_OBJECT_IMPERMANENCE">
+        <supports>Hex</supports>
+        <description>
+            <p>For the next 24 hours, the target loses all object permanence. This can apply in many ways, but in the end, is down to the DM’s discretion.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Cat's Cradle" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_CATS_CRADLE">
+        <supports>Hex</supports>
+        <description>
+            <p>For the next 24 hours, the target loses fine motor function in their fingers. The target cannot do things such as tie knots, playing an instrument, or sewing and spellcasters can longer cast spells with somatic components. This effect can be overcome with a Dexterity (sleight of hand) check against your spell save DC. This does not end the curse, but temporarily overrides it.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Sea Legs" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_SEA_LEGS">
+        <supports>Hex</supports>
+        <description>
+            <p>For the next 24 hours, if the target moves too fast they start to feel dizzy and disoriented. Whenever the target moves more than half their movement speed in a round they must make a Dexterity saving throw against your spell save DC. If they fail they fall prone. When this happens target must succeed on a DC10 constitution saving throw. If they fail they vomit on the ground in front of them.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Leoporid Locomotion" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_LEOPORID_LOCOMOTION">
+        <supports>Hex</supports>
+        <description>
+            <p>For the next 24 hours, the target can only jump to move on the ground. The target has disadvantage on stealth checks and cannot dash on their turn.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Prophet's Mark" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_PROPHETS_MARK">
+        <description>
+            <p>You place a binding mark upon the target that allows you to learn information about the target. For the next month, three times per day, as an action, you can use this ability to either:</p>
+            <ul>
+                <li>Learn their approximate location (accuracy increases depending upon proximity)</li>
+                <li>Learn their current action</li>
+                <li>Learn their current emotion</li>
+            </ul>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Calling of the Grave" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_CALLING_OF_THE_GRAVE">
+        <description>
+            <p>For the next month, the target’s vitality is reduced. Whenever they take damage, the value increases by one. The target becomes vulnerable to necrotic damage and you can use your action to learn how many hit points they have.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+    <element type="Archetype Feature" name="Lunar Fixation" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_HEX_LUNAR_FIXATION">
+        <description>
+            <p>The target becomes afflicted by a madness from the dungeon masters guide (<i>Pg. 258</i>). Choose from either a short-term madness, a long-term madness, or an indefinite madness. Rolling according to your choice, decide upon the duration and effect of the madness.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+        </rules>
+    </element>
+</elements>
