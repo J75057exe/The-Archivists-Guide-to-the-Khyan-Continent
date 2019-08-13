@@ -168,7 +168,7 @@
         </sheet>
         <rules/>
     </element>
-    <element type="Archetype Feature" name="Witch's Famililar - Coven of the Cadaver" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_FAMILIAR_CRAWLING_CLAW">
+    <element type="Archetype Feature" name="Witch's Famililar - Coven of the Cadaver" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_FAMILIAR_SHADOW">
         <description>At 2nd level you enlist the service of a familiar. Being a member of the coven of the Cadaver you gain the option of having a Shadow as your familiar.</description>
         <sheet>
             <description>Your familiar has an intelligence of 11 or higher. You gain the ability to turn your familiar into a Shadow</description>
