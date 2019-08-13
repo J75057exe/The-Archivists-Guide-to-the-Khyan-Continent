@@ -235,7 +235,7 @@
         <sheet display="False">
         </sheet>
         <rules>
-            <select type="Archetype Feature" name="Unholy Protector" supports="Unholy Protector">
+            <select type="Archetype Feature" name="Unholy Protector" supports="Unholy Protector" />
         </rules>
     </element>
     <element type="Archetype Feature" name="Basilisk" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_WITCHCRAFT_BASILISK">
