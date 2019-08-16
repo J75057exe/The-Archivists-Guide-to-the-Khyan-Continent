@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.1">
-			<file name="sources.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/sources.xml" />
+			<file name="sources.xml" url="https://raw.githubusercontent.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Sources.xml" />
 		</update>
 	</info>
 	<element name="The Archivist's Guide to the Khyan Continent" type="Source" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_SOURCE_ARCHIVISTS_GUIDE">
