@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Oath of the Forgotten Kings</name>
+        <description>Paladins that serve the elder gods.</description>
+        <author url="https://sites.google.com/view/thearchivistsguide/home">Oroka_</author>
+        <update version="0.0.1">
+            <file name="Class-Forgotten-Kings.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Classes/Class-Forgotten-Kings.xml" />
+        </update>
+    </info>
+    <element name="Oath of the Forgotten Kings" type="Archetype" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p class="flavor">"We serve the elder gods, forgotten and forlorn, cast into the void. We hope to one day bring about the time where the elder gods rise and reclaim their throne as kings of the universe."</p>
+            <h4>ELDRITCH LISTENER</h4>
+            <p class="indent">You hear the whispers of an ancient god, their screams from the void faint as they travel through the fabric of the planes. Through either seeking out an Elder or hearing their call through the planes, you have made contact with this ancient god, imprisoned in the abyss.</p>
+            <div element="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_TENETS_SPELLS" />
+			<div element="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_CHANNEL_DIVINITY" />
+			<div element="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_AURA_INSANITY" />
+			<div element="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_PSYCHIC_WARD" />
+            <div element="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_ELDRITCH_AVATAR" />
+        </description>
+        <sheet>
+            <description>Followers of an elder god</description>
+        </sheet>
+        <rules>
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_TENETS_SPELLS" level="3" />
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_CHANNEL_DIVINITY" level="3" />         
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_AURA_INSANITY" level="7" />
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_PSYCHIC_WARD" level="15" />
+			<grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_ELDRITCH_AVATAR" level="20" />
+		</rules>
+    </element>
+    <element name="Tenets of the Forgotten Kings" type="Archetype Feature" source="Player’s Handbook" id="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_TENETS_SPELLS">
+        <description>
+            <p>As a servant of the elder you bind yourself to the following tenets:<br/>
+                <span class="feature">Herald in a new Era.</span>As a paladin of the Elders it is your job to go about spreading the truth about the Elder gods, doing your best to convince others about the true righteousness of the Elder gods.<br/>
+                <span class="feature">Unveil the Treacherous.</span>Sow doubt in the minds of those faithful to the archaics, alert the people to the lies of the church, and take every opportunity to expose the archaics.<br/>
+                <span class="feature">Serve the Elders.</span>You may be contacted by your god or a cleric thereof. They might supply you with a task or quest that you must attempt to the best of your ability.<br/>
+            </p>
+            <h5>FORBIDDEN GIFTS - EXPANDED SPELL LIST</h5>
+                <p>You gain oath spells at the paladin levels listed.</p>
+            <table>
+                <thead>
+                    <tr> <td>Paladin Level</td> <td>Spells</td> </tr>
+                </thead>
+                <tr> <td>3rd</td> <td><em>Arms of Hadar, Dissonant Whispers</em></td> </tr>
+                <tr> <td>5th</td> <td><em>Shadowblade, Crown of Madness</em></td> </tr>
+                <tr> <td>9th</td> <td><em>Maddening Smite, Hunger of Hadar</em></td> </tr>
+                <tr> <td>13th</td> <td><em>Phantasmal Killer, Shadow of Moil</em></td> </tr>
+                <tr> <td>17th</td> <td><em>Destructive Wave, Contagion</em></td> </tr>
+            </table>      
+        </description>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ARMS_OF_HADAR" level="3" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DISSONANT_WHISPERS" level="3" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SHADOW_BLADE" level="5" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CROWN_OF_MADNESS" level="5" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_KHY_SPELL_MADDENING_SMITE" level="9" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_HUNGER_OF_HADAR" level="9" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_PHANTASMAL_KILLER" level="13" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_XGTE_SPELL_SHADOW_OF_MOIL" level="13" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" level="17" spellcasting="Paladin" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONTAGION" level="17" spellcasting="Paladin" prepared="true" />
+        </rules>
+        <sheet>
+            <description><p><i>Herald in a new Era.</i></p><p><i>Unveil the Treacherous.</i></p><p><i>Serve the Elders.</i></p></description>
+        </sheet>
+    </element>
+    <element name="Channel Divinity" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_CHANNEL_DIVINITY">
+        <description>
+            <p>When you take this oath at 3rd level, you gain the following two Channel Divinity options.</p>
+            <p class="indent"><b><i>Calling of the Void. </i></b>You submit a being to the elder god you serve. You target a creature within 30ft. They must succeed on a charisma saving throw or else be banished until the end of their next turn. When they return they are stunned until the beginning of their next turn. If you hit the creature while it is stunned from this effect the attack deals an extra 2d8 damage. Creatures that are immune to fear or are native to the abyss are not stunned by this effect.</p>
+            <p class="indent"><b><i>Turn the Usurpers. </i></b>As an action, you present your holy symbol and speak a condemnation, wreaking the minds of celestials and undead, using your Channel Divinity. Each celestial or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p>
+            <p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_CALLING_VOID" />
+            <grant type="Archetype Feature" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_TURN_THE_USURPERS" />
+        </rules>
+    </element>
+    <element name="Channel Divinity: Calling of the Void" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_CALLING_VOID">
+    <description>
+      <p>You submit a being to the elder god you serve. You target a creature within 30ft. They must succeed on a charisma saving throw or else be banished until the end of their next turn. When they return they are stunned until the beginning of their next turn. If you hit the creature while it is stunned from this effect the attack deals an extra 2d8 damage. Creatures that are immune to fear or are native to the abyss are not stunned by this effect.</p>
+    </description>
+    <sheet alt="Calling of the Void" action="Action" usage="Channel Divinity">
+      <description>A creature you select within 30ft must make a Charisma saving throw against your spellsave DC. If they fail they are bansihed to the Abyss until the end of their next turn. When they return they are stunned until the beginning of their next turn. While stunned from this effect, all attacks dealt to them by yourself deal an extra 2d8 psychic damage. Creatures immune to the frightened condition or that are native to the abyss are immune to the latter effect.</description>
+    </sheet>
+  </element>
+  <element name="Channel Divinity: Turn the Usurpers" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_TURN_THE_USURPERS">
+    <description>
+      <p>As an action, you present your holy symbol and speak a condemnation, wreaking the minds of celestials and undead, using your Channel Divinity. Each celestial or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p>
+      <p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
+    </description>
+    <sheet alt="Turn the Usurpers" action="Action" usage="Channel Divinity">
+      <description>You present your holy symbol and speak a condemnation, wreaking the minds of celestials and undead, using your Channel Divinity. Each celestial or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.
+	  A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</description>
+    </sheet>
+  </element>
+   <element name="Aura of Insanity" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_AURA_INSANITY">
+    <description>
+      <p>At 7th level, the paladin, as well as any fiends and abominations within 10ft, gain a bonus to their melee weapon damage rolls equal to 1d8 psychic damage. </p>
+      <p class="indent">Whenever an ally or yourself takes damage while within 10 ft of you, you can use your reaction to rebut their attack. Whoever made the attack must make a wisdom saving throw or else suffer psychic damage equal to your charisma modifier (minimum of 1).</p>      
+      <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>      
+    </description>
+    <sheet>
+      <description>You and any fiends and abominations within {{aura of devotion:range}} feet of you gain a bonus to their melee weapon damage rolls equal to 1d8 psychic damage. Whenever an ally or yourself takes damage while within the radius of your aura you can use a reaction to rebut their attack. Whoever made the attack must make a wisdom saving throw or take psychic damage equal to your charisma modifier.</description>
+    </sheet>
+    <rules>
+      <stat name="aura of insanity:range" value="10" />
+      <stat name="aura of insanity:range" value="30" level="18" />
+    </rules>
+  </element>
+  <element name="Psychic Ward" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_PSYCHIC_WARD">
+    <description>
+      <p>At 15th level you gain resistance to psychic damage and you double your proficiency bonus on wisdom saving throws.</p>      
+    </description>
+    <sheet display="false" />
+    <rules>
+        <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+        <stat name="wisdom:save:proficiency" value="proficiency" bonus="double"/>
+    </rules>
+  </element>
+  <element name="Eldritch Avatar" type="Archetype Feature" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_ARCHETYPE_FORGOTTEN_KINGS_ELDRITCH_AVATAR">
+    <description>
+      <p>At 20th level you learn to channel the might of your patron through yourself. For up to 1 minute or until dismissed (no action required) you gain the following benefits:</p>
+      <ul>
+        <li>You gain a flying speed of 40ft</li>
+        <li>You can use an action to strike with the fearsome might of the Elder. You make a melee spell attack with a range of 20ft. You have +15 to hit on your attacks. On a successful hit you deal 4d10+15 damage.</li>
+        <li>As a bonus action you can mentally attack your foes. You target a creature within 120ft and force them to make a wisdom saving throw. If they fail they take 2d12 psychic damage and are stunned until the beginning of their next turn.</li>
+        <li>You can still use spells, abilities and attacks as normal in this form.</li>
+      </ul>
+      <p>You must wait until the end of a long rest before using this ability again.</p>
+    </description>
+    <sheet display="false" />
+    <rules />
+  </element>
+  <element name="maddening smite" type="Spell" source="The Archivist's Guide to the Khyan Continent" id="ID_OROKA_KHY_SPELL_MADDENING_SMITE">
+    <supports>Cleric, Paladin</supports>
+    <description>
+      <p>The next time you hit a creature with a melee weapon attack during this spells duration, their mind becomes haunted by the whispers of an elder god, compelling them to strike at friend and foe alike. You attack deals an added 3d8 psychic damage. Additionally, the creature must make a wisdom saving throw. If they fail they must attack their closest ally on their turn or suffer 1d8 damage.</p>
+      <p class="indent">At the end of their turn the target can make a wisdom saving throw. Should they succeed they end the effect on them. If they fail after not attacking an ally then they suffer an additional 1d8.</p>
+    </description>
+    <setters>
+      <set name="keywords"></set>
+      <set name="level">3</set>
+      <set name="school">Evocation</set>
+      <set name="time">1 Bonus Action</set>
+      <set name="duration">1 minute</set>
+      <set name="range">self</set>
+      <set name="hasVerbalComponent">true</set>
+      <set name="hasSomaticComponent">false</set>
+      <set name="hasMaterialComponent">false</set>
+      <set name="materialComponent" />
+      <set name="isConcentration">true</set>
+      <set name="isRitual">false</set>
+    </setters>
+  </element>
+</elements>
