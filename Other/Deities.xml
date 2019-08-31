@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Deities</name>
+		<description>Deities from The Archivist's Guide to the Khyan Continent.</description>
+		<author url="https://sites.google.com/view/thearchivistsguide/home">Oroka_</author>
+        <update version="0.0.5">
+            <file name="Deities.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Other/Deities.xml" />
+        </update>
+	</info>
+	<element name="Khytlo" type="Deity" source="The Archivist's Guide to the Khyan Continent" id="ID_KHY_DEITY_KHYTLO">
+		<description>
+			<p class="flavor">Overarching god of the universe</p>
+		</description>
+		<setters>
+			<set name="setting">Khy</set>
+			<set name="alignment">N</set>
+			<set name="domains">War, Light, Life, Knowledge, Death, Trickery, Nature, Tempest</set>
+			<set name="symbol">An Eye</set>
+			<set name="gender">none</set>
+		</setters>
+		<sheet>
+			<description>sole god of the universe</description>
+		</sheet>
+	</element>
+    <element name="Mhilt'hesh" type="Deity" source="The Archivist's Guide to the Khyan Continent" id="ID_KHY_DEITY_MHILTHESH">
+		<description>
+			<p class="flavor">Elder God of Life and Blood</p>
+		</description>
+		<setters>
+			<set name="setting">Khy</set>
+			<set name="alignment">LE</set>
+			<set name="domains">Life, Blood</set>
+			<set name="symbol">A sun with a band around the rays</set>
+			<set name="gender">none</set>
+		</setters>
+		<sheet>
+			<description>Elder God of life and blood</description>
+		</sheet>
+	</element>
+</elements>
