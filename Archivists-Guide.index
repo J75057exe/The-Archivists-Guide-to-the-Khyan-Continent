@@ -4,7 +4,7 @@
 		<name>The Archivist's Guide to the Khyan Continent</name>
 		<description>Content from 'The Archivist's Guide to the Khyan Continent'.</description>
 		<author url="https://sites.google.com/view/thearchivistsguide/home">Oroka_</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="Archivists-Guide.index" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Archivists-Guide.index" />
 		</update>
 	</info>
@@ -15,6 +15,6 @@
 		<file name="Class-Focused-Blade.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Classes/Class-Focused-Blade.xml" />
 		<file name="Class-School-of-Witchcraft.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Classes/Class-School-of-Witchcraft.xml" />
 		<file name="Class-Forgotten-Kings.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Classes/Class-Forgotten-Kings.xml" />
-		<file name="Deities.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/Other/Deities.xml" />
+		<file name="talisman.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/talisman.xml" />
 	</files>
 </index>
