@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements> 
+    <info>
+		<name>Pact of the Talisman</name>
+		<description>The Talisman pact boon from Unearthed Arcana.</description>
+        <update version="0.0.4" revised="">
+			<file name="talisman.xml" url="https://raw.github.com/J75057exe/The-Archivists-Guide-to-the-Khyan-Continent/master/talisman.xml" />
+		</update>
+	</info>
+    <element name="Pact of the Talisman" type="Class Feature" source="Unearthed Arcana" id="ID_WOTC_UA_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN">
+		<supports>Pact Boon</supports>
+		<description>
+			<p>Your patron gives you a special amulet, a talisman that can aid you, or anyone else who wears it, when the need is great. When the wearer makes an ability check with a skill in which they lack proficiency, they can add a d4 to the roll.</p>
+			<p class="indent">If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet.</p>
+			<p class="indent">The talisman turns to ash when you die.</p>
+		</description>
+		<sheet>
+			<description>Your patron gives you a special amulet. Whenever someone who is wearing the amulet makes an ability check in which they are not proficient they can add 1d4.
+			You can recover the talisman on a long rest.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+    <element name="Rebuke of the Talisman" type="Class Feature" source="Unearthed Arcana" id="ID_WOTC_UA_CLASS_FEATURE_ELDRITCH_INVOCATION_REBUKE_OF_THE_TALISMAN">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Talisman</prerequisite>
+		<requirements>ID_WOTC_UA_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Talisman</em></p>
+			<p>When the wearer of your talisman is hit by an attacker you can see within 30 feet of you, you can use your reaction to deal psychic damage to the attacker equal to your Charisma modifier (minimum of 1 damage) and push it up to 10 feet away from the talisman’s wearer.</p>
+		</description>
+		<sheet>
+			<description>When the wearer of your talisman is hit by an attack you can see within 30ft of you, you can use your reaction do deal {{rebuke:damage}} psychic damage to the attacker and push them 10ft away from the wearer.</description>
+		</sheet>
+		<rules>
+			<stat name="rebuke:damage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+    <element name="Protection of the Talisman" type="Class Feature" source="Unearthed Arcana" id="ID_WOTC_UA_CLASS_FEATURE_ELDRITCH_INVOCATION_PROTECTION_OF_THE_TALISMAN">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Talisman</prerequisite>
+		<requirements>ID_WOTC_UA_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Talisman</em></p>
+			<p>When the wearer of your talisman makes a saving throw in which they lack proficiency, they can add a d4 to the roll.</p>
+		</description>
+		<sheet>
+			<description>The wearer of your talisman can add 1d4 to saving throws in which they lack proficiency.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+    <element name="Bond of the Talisman" type="Class Feature" source="Unearthed Arcana" id="ID_WOTC_UA_CLASS_FEATURE_ELDRITCH_INVOCATION_BOND_OF_THE_TALISMAN">
+		<supports>Eldritch Invocation</supports>
+		<prerequisite>Pact of the Talisman</prerequisite>
+		<requirements>ID_WOTC_UA_CLASS_FEATURE_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN</requirements>
+		<description>
+			<p><em>Prerequisite: Pact of the Talisman</em></p>
+			<p>While someone else is wearing your talisman, you can use your action to teleport to the unoccupied space closest to them, provided the two of you are on the same plane of existence. The wearer of your talisman can do the same thing, using their action to teleport to you.</p>
+		</description>
+		<sheet>
+			<description>While someone else is wearing your talisma, either of you can use your action to teleport to the other.</description>
+		</sheet>
+		<rules>
+		</rules>
+	</element>
+</elements>
